@@ -15,4 +15,11 @@ function duplicateEncode(word) {
 		.join("");
 }
 
+//smart move
+
+// function duplicateEncode(word) {
+//     word = word.toLowerCase();
+//     return word.replace(/./g, m => word.indexOf(m) == word.lastIndexOf(m) ? '(' : ')');
+//   }
+
 console.log(duplicateEncode("Success"));
